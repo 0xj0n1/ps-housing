@@ -1,3 +1,8 @@
+ESX = nil
+TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
+
+-- Change QBCore.Functions.GetPlayerData() to ESX.GetPlayerData()
+PlayerData = ESX.GetPlayerData()
 PropertiesTable = {}
 ApartmentsTable = {}
 
